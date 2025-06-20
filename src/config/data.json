@@ -185,7 +185,7 @@
         },
         {
           "id": 2,
-          "name"::! "Bisnis Pro",
+          "name": "Bisnis Pro",
           "description": "Untuk bisnis menengah",
           "priceWithUnit": "Rp1.500.000",
           "buttonText": "Hubungi Kami",
@@ -366,4 +366,4 @@
       }
     ]
   }
-  }
+}
