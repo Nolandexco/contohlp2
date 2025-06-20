@@ -1,4 +1,3 @@
-// components/team-section.js
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Container, Grid } from "theme-ui";
@@ -38,6 +37,7 @@ export default function TeamSection() {
               altText={item.altText}
               title={item.title}
               designation={item.designation}
+              social={item.social}
             />
           ))}
         </Grid>
@@ -59,16 +59,3 @@ const styles = {
     ],
   },
 };
-
-// components/team-card.js
-import { jsx } from "theme-ui";
-
-export default function TeamCard({ src, altText, title, designation }) {
-  return (
-    <div sx={{ textAlign: "center" }}>
-      <img src={src} alt={altText} sx={{ width: "100%", maxWidth: "200px" }} />
-      <h3>{title}</h3>
-      <p>{designation}</p>
-    </div>
-  );
-}
