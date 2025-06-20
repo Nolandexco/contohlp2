@@ -3,7 +3,6 @@ import { jsx } from "theme-ui";
 import { Container, Grid } from "theme-ui";
 import SectionHeader from "components/section-header";
 import TeamCard from "components/team-card";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 import data from "config/data.json";
 
@@ -25,36 +24,22 @@ const imageMap = {
 	"assets/team/member-6.png": Member6,
 };
 
-const iconMap = {
-	facebook: <FaFacebookF />,
-	twitter: <FaTwitter />,
-	instagram: <FaInstagram />,
-};
-
 export default function TeamSection() {
 	return (
 		<section>
 			<Container>
 				<SectionHeader slogan={team.slogan} title={team.title} />
 				<Grid sx={styles.grid}>
-					{team.members.map((item) => {
-						const socialProfilesWithIcons = item.socialProfile.map(
-							(profile) => ({
-								...profile,
-								icon: iconMap[profile.name],
-							})
-						);
-						return (
-							<TeamCard
-								key={item.id}
-								src={imageMap[item.imgSrc]}
-								altText={item.altText}
-								title={item.title}
-								designation={item.designation}
-								social={socialProfilesWithIcons}
-							/>
-						);
-					})}
+					{team.members.map((item) => (
+						<TeamCard
+							key={item.id}
+							src={imageMap[item.imgSrc]}
+							altText={item.altText}
+							title={item.title}
+							designation={item.designation}
+							// Menghapus prop social
+						/>
+					))}
 				</Grid>
 			</Container>
 		</section>
