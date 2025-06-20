@@ -1,366 +1,369 @@
 {
-	"banner": {
-		"title": "Top Quality Digital Products to Explore",
-		"description": "Check out our website to find great software products and deals! If you need a website or a web application, this is the place to go!",
-		"button": {
-			"text": "Explore",
-			"link": "#feature"
-		},
-		"image": "assets/banner-thumb.png",
-		"shapeLeft": "assets/shape-left.png",
-		"shapeRight": "assets/shape-right.png"
-	},
-	"coreFeature": {
-		"subTitle": "Core features",
-		"title": "Smart Jackpots that you may love this anytime & anywhere",
-		"description": "Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.",
-		"button": {
-			"text": "Get Started",
-			"link": "#"
-		},
-		"thumbnail": "assets/core-feature.png",
-		"shape": "assets/shape-pattern2.png"
-	},
-	"features": {
-		"slogan": "Quality Features",
-		"title": "Useful Features",
-		"items": [
-			{
-				"id": 1,
-				"imgSrc": "assets/feature/performance.svg",
-				"altText": "Fast Performance",
-				"title": "Fast Performance",
-				"text": "Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world."
-			},
-			{
-				"id": 2,
-				"imgSrc": "assets/feature/partnership.svg",
-				"altText": "Pro Subscription",
-				"title": "Pro Subscription",
-				"text": "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers."
-			},
-
-			{
-				"id": 3,
-				"imgSrc": "assets/feature/subscription.svg",
-				"altText": "Partnership deal",
-				"title": "Partnership deal",
-				"text": "Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world."
-			},
-			{
-				"id": 4,
-				"imgSrc": "assets/feature/support.svg",
-				"altText": "Customer Support",
-				"title": "Customer Support",
-				"text": "We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers."
-			}
-		]
-	},
-	"keyFeature": {
-		"slogan": "What's the function",
-		"title": "Meet the feature of our product",
-		"items": [
-			{
-				"id": 1,
-				"imgSrc": "assets/key-feature/performance.svg",
-				"altText": "Fast Performance",
-				"title": "Fast Performance",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			},
-			{
-				"id": 2,
-				"imgSrc": "assets/key-feature/partnership.svg",
-				"altText": "Partnership deal",
-				"title": "Partnership deal",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			},
-			{
-				"id": 3,
-				"imgSrc": "assets/key-feature/subscription.svg",
-				"altText": "Pro Subscription",
-				"title": "Pro Subscription",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			},
-			{
-				"id": 4,
-				"imgSrc": "assets/key-feature/support.svg",
-				"altText": "Customer Support",
-				"title": "Customer Support",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			}
-		]
-	},
-	"services": {
-		"subTitle": "our services",
-		"title": "Business Goals Achieved with Design",
-		"thumbnail": "assets/service-thumb.png",
-		"shape": "assets/shape-pattern1.png",
-		"video": {
-			"buttonLabel": "Play Button",
-			"videoId": "iGBERMGMIvc"
-		},
-		"features": [
-			{
-				"id": 1,
-				"imgSrc": "assets/services/smart.svg",
-				"altText": "Smart Features",
-				"title": "Smart Features",
-				"text": "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests."
-			},
-			{
-				"id": 2,
-				"imgSrc": "assets/services/secure.svg",
-				"altText": "Secure Contents",
-				"title": "Secure Contents",
-				"text": "Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests."
-			}
-		]
-	},
-	"pricing": {
-		"slogan": "Pricing Plan",
-		"title": "Choose your pricing plan",
-		"toggle": {
-			"monthly": "Monthly Plan",
-			"annual": "Annual Plan"
-		},
-		"plans": {
-			"monthly": [
-				{
-					"id": 1,
-					"name": "Free Plan",
-					"description": "For Small teams or office",
-					"buttonText": "Start free trial",
-					"priceWithUnit": "$0",
-					"points": [
-						{ "icon": "checkmark", "text": "Drag & Drop Builder", "isAvailable": true },
-						{ "icon": "checkmark", "text": "1,000's of Templates", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Blog Support Tools", "isAvailable": true },
-						{ "icon": "close", "text": "eCommerce Store ", "isAvailable": false }
-					]
-				},
-				{
-					"id": 2,
-					"name": "Business king",
-					"description": "For Enterprise business",
-					"priceWithUnit": "$15",
-					"buttonText": "Create account",
-					"anotherOption": "Or Start 14 Days trial",
-					"points": [
-						{ "icon": "checkmark", "text": "Drag & Drop Builder", "isAvailable": true },
-						{ "icon": "checkmark", "text": "1,000's of Templates", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Blog Support Tools", "isAvailable": true },
-						{ "icon": "checkmark", "text": "eCommerce Store ", "isAvailable": true }
-					]
-				},
-				{
-					"id": 3,
-					"header": "Suggested",
-					"name": "Pro Master",
-					"description": "For pro level developers",
-					"priceWithUnit": "$24",
-					"buttonText": "Create account",
-					"anotherOption": "Or Start 14 Days trial",
-					"points": [
-						{ "icon": "checkmark", "text": "Drag & Drop Builder", "isAvailable": true },
-						{ "icon": "checkmark", "text": "1,000's of Templates", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Blog Support Tools", "isAvailable": true },
-						{ "icon": "checkmark", "text": "eCommerce Store ", "isAvailable": true }
-					]
-				}
-			],
-			"annual": [
-				{
-					"id": 1,
-					"name": "Free Plan",
-					"description": "For Small teams or office",
-					"buttonText": "Start free trial",
-					"priceWithUnit": "$0",
-					"points": [
-						{ "icon": "checkmark", "text": "1,000's of Templates", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Drag & Drop Builder", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Blog Support Tools", "isAvailable": true },
-						{ "icon": "close", "text": "eCommerce Store ", "isAvailable": false }
-					]
-				},
-				{
-					"id": 2,
-					"name": "Business king",
-					"description": "For Enterprise business",
-					"priceWithUnit": "$25",
-					"buttonText": "Create account",
-					"anotherOption": "Or Start 10 Days trial",
-					"points": [
-						{ "icon": "checkmark", "text": "eCommerce Store", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Blog Support Tools", "isAvailable": true },
-						{ "icon": "checkmark", "text": "1,000's of Templates", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Drag & Drop Builder ", "isAvailable": true }
-					]
-				},
-				{
-					"id": 3,
-					"header": "Suggested",
-					"name": "Pro Master",
-					"description": "For pro level developers",
-					"priceWithUnit": "$39",
-					"buttonText": "Create account",
-					"anotherOption": "Or Start 10 Days trial",
-					"points": [
-						{ "icon": "checkmark", "text": "eCommerce Store", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Blog Support Tools", "isAvailable": true },
-						{ "icon": "checkmark", "text": "1,000's of Templates", "isAvailable": true },
-						{ "icon": "checkmark", "text": "Drag & Drop Builder ", "isAvailable": true }
-					]
-				}
-			]
-		}
-	},
-	"team": {
-		"slogan": "our team",
-		"title": "The most qualified and talented individuals",
-		"members": [
-			{
-				"id": 1,
-				"imgSrc": "assets/team/member-1.png",
-				"altText": "Saimon Harmer",
-				"title": "Saimon Harmer",
-				"designation": "CEO and Founder",
-				"socialProfile": [
-					{ "name": "facebook", "path": "#" },
-					{ "name": "twitter", "path": "#" },
-					{ "name": "instagram", "path": "#" }
-				]
-			},
-			{
-				"id": 2,
-				"imgSrc": "assets/team/member-2.png",
-				"altText": "Aaron Nunez",
-				"title": "Aaron Nunez",
-				"designation": "Founder",
-				"socialProfile": [
-					{ "name": "facebook", "path": "#" },
-					{ "name": "twitter", "path": "#" },
-					{ "name": "instagram", "path": "#" }
-				]
-			},
-			{
-				"id": 3,
-				"imgSrc": "assets/team/member-3.png",
-				"altText": "Aaron Nunez",
-				"title": "Aaron Nunez",
-				"designation": "Web Designer",
-				"socialProfile": [
-					{ "name": "facebook", "path": "#" },
-					{ "name": "twitter", "path": "#" },
-					{ "name": "instagram", "path": "#" }
-				]
-			},
-			{
-				"id": 4,
-				"imgSrc": "assets/team/member-4.png",
-				"altText": "Lina Jutila",
-				"title": "Lina Jutila",
-				"designation": "Web Developer",
-				"socialProfile": [
-					{ "name": "facebook", "path": "#" },
-					{ "name": "twitter", "path": "#" },
-					{ "name": "instagram", "path": "#" }
-				]
-			},
-			{
-				"id": 5,
-				"imgSrc": "assets/team/member-5.png",
-				"altText": "Saimon Harmer",
-				"title": "Saimon Harmer",
-				"designation": "CEO and Founder",
-				"socialProfile": [
-					{ "name": "facebook", "path": "#" },
-					{ "name": "twitter", "path": "#" },
-					{ "name": "instagram", "path": "#" }
-				]
-			},
-			{
-				"id": 6,
-				"imgSrc": "assets/team/member-6.png",
-				"altText": "Aaron Nunez",
-				"title": "Aaron Nunez",
-				"designation": "Web Designer",
-				"socialProfile": [
-					{ "name": "facebook", "path": "#" },
-					{ "name": "twitter", "path": "#" },
-					{ "name": "instagram", "path": "#" }
-				]
-			}
-		]
-	},
-	"testimonials": {
-		"slogan": "Testimonial",
-		"title": "Meet Client Satisfaction",
-		"reviews": [
-			{
-				"id": 1,
-				"title": "Modern look & trending design",
-				"description": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
-				"avatar": "assets/testimonial/avatar1.png",
-				"name": "Denny Hilguston",
-				"designation": "@denny.hil",
-				"review": 4
-			},
-			{
-				"id": 2,
-				"title": "Design Quality & performance",
-				"description": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
-				"avatar": "assets/testimonial/avatar2.png",
-				"name": "Denny Hilguston",
-				"designation": "@denny.hil",
-				"review": 5
-			},
-			{
-				"id": 3,
-				"title": "Layout and organized layers",
-				"description": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
-				"avatar": "assets/testimonial/avatar3.png",
-				"name": "Denny Hilguston",
-				"designation": "@denny.hil",
-				"review": 5
-			},
-			{
-				"id": 4,
-				"title": "Modern look & trending design",
-				"description": "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
-				"avatar": "assets/testimonial/avatar4.png",
-				"name": "Denny Hilguston",
-				"designation": "@denny.hil",
-				"review": 4
-			}
-		]
-	},
-	"workflow": {
-		"slogan": "WHAT'S THE FUNCTION",
-		"title": "Meet the feature of our product",
-		"patternBackground": "assets/patternBG.png",
-		"arrowOdd": "assets/arrowOdd.svg",
-		"arrowEven": "assets/arrowEven.svg",
-		"steps": [
-			{
-				"id": 1,
-				"title": "Set disbursement Instructions",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			},
-			{
-				"id": 2,
-				"title": "Assembly retrieves funds from your account",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			},
-			{
-				"id": 3,
-				"title": "Assembly initiates disbursement",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			},
-			{
-				"id": 4,
-				"title": "Customer receives funds payment",
-				"text": "Get your blood tests delivered at home collect a sample from the your blood tests."
-			}
-		]
-	}
-}
+  "banner": {
+    "title": "Temukan Solusi Digital Terbaik Bersama Bisnovo",
+    "description": "Kunjungi kami untuk menemukan produk dan layanan digital berkualitas tinggi! Jika Anda membutuhkan website atau aplikasi web, Bisnovo adalah solusi tepat!",
+    "button": {
+      "text": "Hubungi Kami",
+      "link": "https://wa.me/085156779923"
+    },
+    "image": "assets/banner-thumb.png",
+    "shapeLeft": "assets/shape-left.png",
+    "shapeRight": "assets/shape-right.png"
+  },
+  "coreFeature": {
+    "subTitle": "Fitur Utama",
+    "title": "Solusi Digital Inovatif dari Bisnovo",
+    "description": "Nikmati layanan digital terbaik yang dirancang untuk memenuhi kebutuhan bisnis Anda, kapan saja dan di mana saja.",
+    "button": {
+      "text": "Mulai Sekarang",
+      "link": "https://wa.me/085156779923"
+    },
+    "thumbnail": "assets/core-feature.png",
+    "shape": "assets/shape-pattern2.png"
+  },
+  "features": {
+    "slogan": "Fitur Unggulan",
+    "title": "Fitur Berguna dari Bisnovo",
+    "items": [
+      {
+        "id": 1,
+        "imgSrc": "assets/feature/performance.svg",
+        "altText": "Performa Cepat",
+        "title": "Performa Cepat",
+        "text": "Layanan kami dioptimalkan untuk memberikan performa terbaik, membantu bisnis Anda berjalan lebih efisien."
+      },
+      {
+        "id": 2,
+        "imgSrc": "assets/feature/partnership.svg",
+        "altText": "Langganan Pro",
+        "title": "Langganan Pro",
+        "text": "Akses fitur premium kami untuk meningkatkan produktivitas dan mendukung pertumbuhan bisnis Anda."
+      },
+      {
+        "id": 3,
+        "imgSrc": "assets/feature/subscription.svg",
+        "altText": "Kemitraan Strategis",
+        "title": "Kemitraan Strategis",
+        "text": "Kami menawarkan solusi kemitraan untuk membantu bisnis Anda mencapai tujuan jangka panjang."
+      },
+      {
+        "id": 4,
+        "imgSrc": "assets/feature/support.svg",
+        "altText": "Dukungan Pelanggan",
+        "title": "Dukungan Pelanggan",
+        "text": "Tim dukungan kami siap membantu Anda kapan saja untuk memastikan pengalaman terbaik."
+      }
+    ]
+  },
+  "keyFeature": {
+    "slogan": "Apa Fungsinya",
+    "title": "Kenali Fitur Produk Bisnovo",
+    "items": [
+      {
+        "id": 1,
+        "imgSrc": "assets/key-feature/performance.svg",
+        "altText": "Performa Cepat",
+        "title": "Performa Cepat",
+        "text": "Layanan kami dirancang untuk memberikan kecepatan dan efisiensi maksimal untuk bisnis Anda."
+      },
+      {
+        "id": 2,
+        "imgSrc": "assets/key-feature/partnership.svg",
+        "altText": "Kemitraan Strategis",
+        "title": "Kemitraan Strategis",
+        "text": "Kami bekerja sama dengan Anda untuk menciptakan solusi yang mendukung pertumbuhan bisnis."
+      },
+      {
+        "id": 3,
+        "imgSrc": "assets/key-feature/subscription.svg",
+        "altText": "Langganan Pro",
+        "title": "Langganan Pro",
+        "text": "Akses fitur eksklusif dengan langganan pro untuk hasil yang lebih optimal."
+      },
+      {
+        "id": 4,
+        "imgSrc": "assets/key-feature/support.svg",
+        "altText": "Dukungan Pelanggan",
+        "title": "Dukungan Pelanggan",
+        "text": "Dukungan 24/7 untuk memastikan kebutuhan bisnis Anda selalu terpenuhi."
+      }
+    ]
+  },
+  "services": {
+    "subTitle": "Layanan Kami",
+    "title": "Wujudkan Tujuan Bisnis Anda Bersama Bisnovo",
+    "thumbnail": "assets/service-thumb.png",
+    "shape": "assets/shape-pattern1.png",
+    "video": {
+      "buttonLabel": "Putar Video",
+      "videoId": "iGBERMGMIvc"
+    },
+    "features": [
+      {
+        "id": 1,
+        "imgSrc": "assets/services/smart.svg",
+        "altText": "Fitur Cerdas",
+        "title": "Fitur Cerdas",
+        "text": "Solusi digital cerdas untuk membantu bisnis Anda lebih efisien dan kompetitif."
+      },
+      {
+        "id": 2,
+        "imgSrc": "assets/services/secure.svg",
+        "altText": "Konten Aman",
+        "title": "Konten Aman",
+        "text": "Keamanan data dan privasi Anda adalah prioritas kami dalam setiap layanan."
+      }
+    ]
+  },
+  "pricing": {
+    "slogan": "Paket Harga",
+    "title": "Pilih Paket Harga Bisnovo",
+    "toggle": {
+      "monthly": "Paket Bulanan",
+      "annual": "Paket Tahunan"
+    },
+    "plans": {
+      "monthly": [
+        {
+          "id": 1,
+          "name": "Paket Gratis",
+          "description": "Untuk tim kecil atau startup",
+          "buttonText": "Coba Gratis",
+          "priceWithUnit": "Rp0",
+          "points": [
+            { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
+            { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
+            { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
+            { "icon": "close", "text": "Toko eCommerce", "isAvailable": false }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Bisnis Pro",
+          "description": "Untuk bisnis menengah",
+          "priceWithUnit": "Rp150.000",
+          "buttonText": "Hubungi Kami",
+          "link": "https://wa.me/085156779923",
+          "anotherOption": "Atau Coba 14 Hari Gratis",
+          "points": [
+            { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
+            { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
+            { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
+            { "icon": "checkmark", "text": "Toko eCommerce", "isAvailable": true }
+          ]
+        },
+        {
+          "id": 3,
+          "header": "Rekomendasi",
+          "name": "Master Pro",
+          "description": "Untuk pengembang profesional",
+          "priceWithUnit": "Rp240.000",
+          "buttonText": "Hubungi Kami",
+          "link": "https://wa.me/085156779923",
+          "anotherOption": "Atau Coba 14 Hari Gratis",
+          "points": [
+            { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
+            { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
+            { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
+            { "icon": "checkmark", "text": "Toko eCommerce", "isAvailable": true }
+          ]
+        }
+      ],
+      "annual": [
+        {
+          "id": 1,
+          "name": "Paket Gratis",
+          "description": "Untuk tim kecil atau startup",
+          "buttonText": "Coba Gratis",
+          "priceWithUnit": "Rp0",
+          "points": [
+            { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
+            { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
+            { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
+            { "icon": "close", "text": "Toko eCommerce", "isAvailable": false }
+          ]
+        },
+        {
+          "id": 2,
+          "name"::! "Bisnis Pro",
+          "description": "Untuk bisnis menengah",
+          "priceWithUnit": "Rp1.500.000",
+          "buttonText": "Hubungi Kami",
+          "link": "https://wa.me/085156779923",
+          "anotherOption": "Atau Coba 10 Hari Gratis",
+          "points": [
+            { "icon": "checkmark", "text": "Toko eCommerce", "isAvailable": true },
+            { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
+            { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
+            { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true }
+          ]
+        },
+        {
+          "id": 3,
+          "header": "Rekomendasi",
+          "name": "Master Pro",
+          "description": "Untuk pengembang profesional",
+          "priceWithUnit": "Rp2.400.000",
+          "buttonText": "Hubungi Kami",
+          "link": "https://wa.me/085156779923",
+          "anotherOption": "Atau Coba 10 Hari Gratis",
+          "points": [
+            { "icon": "checkmark", "text": "Toko eCommerce", "isAvailable": true },
+            { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
+            { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
+            { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true }
+          ]
+        }
+      ]
+    }
+  },
+  "team": {
+    "slogan": "Tim Kami",
+    "title": "Tim Berbakat Bisnovo",
+    "members": [
+      {
+        "id": 1,
+        "imgSrc": "assets/team/member-1.png",
+        "altText": "Saimon Harmer",
+        "title": "Saimon Harmer",
+        "designation": "CEO dan Pendiri",
+        "socialProfile": [
+          { "name": "facebook", "path": "https://wa.me/085156779923" },
+          { "name": "twitter", "path": "https://wa.me/085156779923" },
+          { "name": "instagram", "path": "https://wa.me/085156779923" }
+        ]
+      },
+      {
+        "id": 2,
+        "imgSrc": "assets/team/member-2.png",
+        "altText": "Aaron Nunez",
+        "title": "Aaron Nunez",
+        "designation": "Pendiri",
+        "socialProfile": [
+          { "name": "facebook", "path": "https://wa.me/085156779923" },
+          { "name": "twitter", "path": "https://wa.me/085156779923" },
+          { "name": "instagram", "path": "https://wa.me/085156779923" }
+        ]
+      },
+      {
+        "id": 3,
+        "imgSrc": "assets/team/member-3.png",
+        "altText": "Aaron Nunez",
+        "title": "Aaron Nunez",
+        "designation": "Desainer Web",
+        "socialProfile": [
+          { "name": "facebook", "path": "https://wa.me/085156779923" },
+          { "name": "twitter", "path": "https://wa.me/085156779923" },
+          { "name": "instagram", "path": "https://wa.me/085156779923" }
+        ]
+      },
+      {
+        "id": 4,
+        "imgSrc": "assets/team/member-4.png",
+        "altText": "Lina Jutila",
+        "title": "Lina Jutila",
+        "designation": "Pengembang Web",
+        "socialProfile": [
+          { "name": "facebook", "path": "https://wa.me/085156779923" },
+          { "name": "twitter", "path": "https://wa.me/085156779923" },
+          { "name": "instagram", "path": "https://wa.me/085156779923" }
+        ]
+      },
+      {
+        "id": 5,
+        "imgSrc": "assets/team/member-5.png",
+        "altText": "Saimon Harmer",
+        "title": "Saimon Harmer",
+        "designation": "CEO dan Pendiri",
+        "socialProfile": [
+          { "name": "facebook", "path": "https://wa.me/085156779923" },
+          { "name": "twitter", "path": "https://wa.me/085156779923" },
+          { "name": "instagram", "path": "https://wa.me/085156779923" }
+        ]
+      },
+      {
+        "id": 6,
+        "imgSrc": "assets/team/member-6.png",
+        "altText": "Aaron Nunez",
+        "title": "Aaron Nunez",
+        "designation": "Desainer Web",
+        "socialProfile": [
+          { "name": "facebook", "path": "https://wa.me/085156779923" },
+          { "name": "twitter", "path": "https://wa.me/085156779923" },
+          { "name": "instagram", "path": "https://wa.me/085156779923" }
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "slogan": "Testimoni",
+    "title": "Kepuasan Klien Bisnovo",
+    "reviews": [
+      {
+        "id": 1,
+        "title": "Desain Modern & Trendi",
+        "description": "Pengalaman bekerja dengan tim Bisnovo sangat luar biasa. Kami berharap dapat berkolaborasi lagi untuk proyek masa depan!",
+        "avatar": "assets/testimonial/avatar1.png",
+        "name": "Denny Hilguston",
+        "designation": "@denny.hil",
+        "review": 4
+      },
+      {
+        "id": 2,
+        "title": "Kualitas Desain & Performa",
+        "description": "Tim Bisnovo memberikan layanan yang sangat memuaskan. Kami menantikan kerja sama berikutnya!",
+        "avatar": "assets/testimonial/avatar2.png",
+        "name": "Denny Hilguston",
+        "designation": "@denny.hil",
+        "review": 5
+      },
+      {
+        "id": 3,
+        "title": "Tata Letak yang Rapi",
+        "description": "Kerja sama dengan Bisnovo sangat menyenangkan. Solusi mereka membantu bisnis kami berkembang!",
+        "avatar": "assets/testimonial/avatar3.png",
+        "name": "Denny Hilguston",
+        "designation": "@denny.hil",
+        "review": 5
+      },
+      {
+        "id": 4,
+        "title": "Desain Modern & Trendi",
+        "description": "Bisnovo memberikan layanan digital yang luar biasa. Kami sangat puas dengan hasilnya!",
+        "avatar": "assets/testimonial/avatar4.png",
+        "name": "Denny Hilguston",
+        "designation": "@denny.hil",
+        "review": 4
+      }
+    ]
+  },
+  "workflow": {
+    "slogan": "Bagaimana Kami Bekerja",
+    "title": "Kenali Alur Kerja Bisnovo",
+    "patternBackground": "assets/patternBG.png",
+    "arrowOdd": "assets/arrowOdd.svg",
+    "arrowEven": "assets/arrowEven.svg",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Konsultasi Awal",
+        "text": "Kami mendengarkan kebutuhan Anda untuk merancang solusi digital terbaik."
+      },
+      {
+        "id": 2,
+        "title": "Perancangan Solusi",
+        "text": "Tim kami merancang solusi yang disesuaikan dengan tujuan bisnis Anda."
+      },
+      {
+        "id": 3,
+        "title": "Pengembangan Produk",
+        "text": "Kami mengembangkan produk digital dengan performa dan kualitas terbaik."
+      },
+      {
+        "id": 4,
+        "title": "Peluncuran & Dukungan",
+        "text": "Produk diluncurkan dengan dukungan penuh untuk memastikan kesuksesan Anda."
+      }
+    ]
+  }
+  }
