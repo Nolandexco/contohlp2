@@ -1,22 +1,18 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Container, Grid } from "theme-ui";
-import SectionHeader from "components/section-header";
+import SectionHeader from "components/section-header.js";
 import FeatureCard from "components/feature-card.js";
 
-// 1. Impor data
 import data from "config/data.json";
 
-// Impor semua ikon SVG yang mungkin digunakan
 import Performance from "assets/feature/performance.svg";
 import Partnership from "assets/feature/partnership.svg";
 import Subscription from "assets/feature/subscription.svg";
 import Support from "assets/feature/support.svg";
 
-// 2. Ambil data yang relevan
 const { features } = data;
 
-// 4. Buat peta untuk mencocokkan path string dari JSON ke komponen Ikon
 const iconMap = {
 	"assets/feature/performance.svg": Performance,
 	"assets/feature/partnership.svg": Partnership,
@@ -28,7 +24,6 @@ export default function Feature() {
 	return (
 		<section sx={{ variant: "section.feature" }}>
 			<Container>
-				{/* 3. Gunakan data dari JSON */}
 				<SectionHeader
 					slogan={features.slogan}
 					title={features.title}
@@ -37,7 +32,7 @@ export default function Feature() {
 					{features.items.map((item) => (
 						<FeatureCard
 							key={item.id}
-							src={iconMap[item.imgSrc]} // Gunakan peta ikon
+							src={iconMap[item.imgSrc]}
 							alt={item.altText}
 							title={item.title}
 							text={item.text}
@@ -49,7 +44,20 @@ export default function Feature() {
 	);
 }
 
-// Styles tidak perlu diubah
 const styles = {
-    // ... (kode styles sama seperti sebelumnya)
+	grid: {
+		pt: [0, null, null, null, null, null, 2],
+		px: [5, 6, 0, null, 7, 8, 7],
+		gridGap: [
+			"40px 0",
+			null,
+			"45px 30px",
+			null,
+			"60px 50px",
+			"70px 50px",
+			null,
+			"80px 90px",
+		],
+		gridTemplateColumns: ["repeat(1,1fr)", null, "repeat(2,1fr)"],
+	},
 };
