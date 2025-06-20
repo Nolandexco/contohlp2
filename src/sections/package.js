@@ -8,219 +8,14 @@ import ButtonGroup from "components/button-group";
 import SectionHeader from "components/section-header";
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
 
-const packages = {
-	monthly: [
-		{
-			id: 1,
-			name: "Free Plan",
-			description: "For Small teams or office",
-			buttonText: "Start free trial",
-			priceWithUnit: "$0",
-			points: [
-				{
-					id: 1,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Drag & Drop Builder",
-					isAvailable: true,
-				},
-				{
-					id: 2,
-					icon: <IoIosCheckmarkCircle />,
-					text: "1,000's of Templates",
-					isAvailable: true,
-				},
-				{
-					id: 3,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Blog Support Tools",
-					isAvailable: true,
-				},
-				{
-					id: 4,
-					icon: <IoIosCloseCircle />,
-					text: "eCommerce Store ",
-					isAvailable: true,
-				},
-			],
-		},
-		{
-			id: 2,
-			name: "Business king",
-			description: "For Enterprise business",
-			priceWithUnit: "$15",
-			buttonText: "Create account",
-			anotherOption: "Or Start 14 Days trial",
-			points: [
-				{
-					id: 1,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Drag & Drop Builder",
-					isAvailable: true,
-				},
-				{
-					id: 2,
-					icon: <IoIosCheckmarkCircle />,
-					text: "1,000's of Templates",
-					isAvailable: true,
-				},
-				{
-					id: 3,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Blog Support Tools",
-					isAvailable: true,
-				},
-				{
-					id: 4,
-					icon: <IoIosCheckmarkCircle />,
-					text: "eCommerce Store ",
-					isAvailable: true,
-				},
-			],
-		},
-		{
-			id: 3,
-			header: "Suggested",
-			headerIcon: <IoIosCheckmarkCircle />,
-			name: "Pro Master",
-			description: "For pro level developers",
-			priceWithUnit: "$24",
-			buttonText: "Create account",
-			anotherOption: "Or Start 14 Days trial",
-			points: [
-				{
-					id: 1,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Drag & Drop Builder",
-					isAvailable: true,
-				},
-				{
-					id: 2,
-					icon: <IoIosCheckmarkCircle />,
-					text: "1,000's of Templates",
-					isAvailable: true,
-				},
-				{
-					id: 3,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Blog Support Tools",
-					isAvailable: true,
-				},
-				{
-					id: 4,
-					icon: <IoIosCheckmarkCircle />,
-					text: "eCommerce Store ",
-					isAvailable: true,
-				},
-			],
-		},
-	],
-	annual: [
-		{
-			id: 1,
-			name: "Free Plan",
-			description: "For Small teams or office",
-			buttonText: "Start free trial",
-			priceWithUnit: "$0",
-			points: [
-				{
-					id: 1,
-					icon: <IoIosCheckmarkCircle />,
-					text: "1,000's of Templates",
-					isAvailable: true,
-				},
-				{
-					id: 2,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Drag & Drop Builder",
-					isAvailable: true,
-				},
-				{
-					id: 3,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Blog Support Tools",
-					isAvailable: true,
-				},
-				{
-					id: 4,
-					icon: <IoIosCloseCircle />,
-					text: "eCommerce Store ",
-					isAvailable: true,
-				},
-			],
-		},
-		{
-			id: 2,
-			name: "Business king",
-			description: "For Enterprise business",
-			priceWithUnit: "$25",
-			buttonText: "Create account",
-			anotherOption: "Or Start 10 Days trial",
-			points: [
-				{
-					id: 1,
-					icon: <IoIosCheckmarkCircle />,
-					text: "eCommerce Store",
-					isAvailable: true,
-				},
-				{
-					id: 2,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Blog Support Tools",
-					isAvailable: true,
-				},
-				{
-					id: 3,
-					icon: <IoIosCheckmarkCircle />,
-					text: "1,000's of Templates",
-					isAvailable: true,
-				},
-				{
-					id: 4,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Drag & Drop Builder ",
-					isAvailable: true,
-				},
-			],
-		},
-		{
-			id: 3,
-			header: "Suggested",
-			headerIcon: <IoIosCheckmarkCircle />,
-			name: "Pro Master",
-			description: "For pro level developers",
-			priceWithUnit: "$39",
-			buttonText: "Create account",
-			anotherOption: "Or Start 10 Days trial",
-			points: [
-				{
-					id: 1,
-					icon: <IoIosCheckmarkCircle />,
-					text: "eCommerce Store",
-					isAvailable: true,
-				},
-				{
-					id: 2,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Blog Support Tools",
-					isAvailable: true,
-				},
-				{
-					id: 3,
-					icon: <IoIosCheckmarkCircle />,
-					text: "1,000's of Templates",
-					isAvailable: true,
-				},
-				{
-					id: 4,
-					icon: <IoIosCheckmarkCircle />,
-					text: "Drag & Drop Builder ",
-					isAvailable: true,
-				},
-			],
-		},
-	],
-};
+// 1. Impor data terpusat
+import data from "config/data.json";
 
+// 2. Ambil data yang relevan dan pisahkan paket bulanan/tahunan
+const { pricing } = data;
+const { monthly, annual } = pricing.plans;
+
+// Konfigurasi Carousel, tidak berubah
 const responsive = {
 	desktop: {
 		breakpoint: { max: 3000, min: 1024 },
@@ -240,25 +35,40 @@ const responsive = {
 };
 
 export default function Package() {
-	const { monthly, annual } = packages;
+	// State management untuk beralih antara paket bulanan dan tahunan
 	const [state, setState] = useState({
 		active: "monthly",
-		pricingPlan: monthly,
+		pricingPlan: monthly, // Inisialisasi state dengan data dari JSON
 	});
+
+	// Fungsi untuk mengubah paket harga
 	const handlePricingPlan = (plan) => {
 		if (plan === "annual") {
 			setState({
 				active: "annual",
-				pricingPlan: annual,
+				pricingPlan: annual, // Gunakan data 'annual' dari JSON
 			});
 		} else {
 			setState({
 				active: "monthly",
-				pricingPlan: monthly,
+				pricingPlan: monthly, // Gunakan data 'monthly' dari JSON
 			});
 		}
 	};
+    
+    // 4. Helper untuk mengubah string ikon dari JSON menjadi komponen ikon React
+	const getIcon = (iconString) => {
+		switch (iconString) {
+			case "checkmark":
+				return <IoIosCheckmarkCircle />;
+			case "close":
+				return <IoIosCloseCircle />;
+			default:
+				return null;
+		}
+	};
 
+	// Parameter untuk slider Carousel
 	const sliderParams = {
 		additionalTransfrom: 0,
 		arrows: false,
@@ -285,7 +95,11 @@ export default function Package() {
 	return (
 		<section id="pricing" sx={{ variant: "section.pricing" }}>
 			<Container>
-				<SectionHeader slogan="Pricing Plan" title="Choose your pricing plan" />
+				{/* 3. Gunakan data dari JSON untuk header */}
+				<SectionHeader
+					slogan={pricing.slogan}
+					title={pricing.title}
+				/>
 				<Flex sx={styles.buttonGroup}>
 					<Box sx={styles.buttonGroupInner}>
 						<button
@@ -294,7 +108,7 @@ export default function Package() {
 							aria-label="Monthly"
 							onClick={() => handlePricingPlan("monthly")}
 						>
-							Monthly Plan
+							{pricing.toggle.monthly}
 						</button>
 						<button
 							className={state.active === "annual" ? "active" : ""}
@@ -302,17 +116,28 @@ export default function Package() {
 							aria-label="Annual"
 							onClick={() => handlePricingPlan("annual")}
 						>
-							Annual Plan
+							{pricing.toggle.annual}
 						</button>
 					</Box>
 				</Flex>
 				<Box sx={styles.pricingWrapper} className="pricing__wrapper">
 					<Carousel {...sliderParams}>
-						{state.pricingPlan.map((packageData) => (
-							<Box sx={styles.pricingItem} key={packageData.id}>
-								<PriceCard data={packageData} />
-							</Box>
-						))}
+						{state.pricingPlan.map((packageData) => {
+							// Buat salinan data paket dan ubah poin ikonnya dari string ke komponen
+							const packageWithIcons = {
+								...packageData,
+								points: packageData.points.map((point) => ({
+									...point,
+									icon: getIcon(point.icon), // Ubah string ke komponen
+								})),
+							};
+							return (
+								<Box sx={styles.pricingItem} key={packageData.id}>
+									{/* Kirim data yang sudah diolah ke komponen PriceCard */}
+									<PriceCard data={packageWithIcons} />
+								</Box>
+							);
+						})}
 					</Carousel>
 				</Box>
 			</Container>
@@ -320,6 +145,7 @@ export default function Package() {
 	);
 }
 
+// Definisi Keyframes untuk animasi
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -338,6 +164,8 @@ const fadeIn2 = keyframes`
     opacity: 1;
   }
 `;
+
+// Kode styles lengkap tanpa pemotongan
 const styles = {
 	pricingWrapper: {
 		mb: "-40px",
