@@ -2,10 +2,14 @@
   "name": "landing-page",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "postbuild": "next-sitemap"
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "postbuild": "next-sitemap",
+    "start": "next start"
   },
   "dependencies": {
     "@next/env": "^12.1.0",
@@ -19,8 +23,8 @@
     "prettier": "^2.1.2",
     "rc-drawer": "^4.1.0",
     "react": "16.13.0",
-    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "16.13.0",
+    "react-custom-scrollbars": "^4.2.1",
     "react-ga": "^3.1.2",
     "react-icons": "^3.10.0",
     "react-modal-video": "^1.2.6",
