@@ -2,8 +2,8 @@
 import { jsx, Container, Flex, Button, Heading } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
-// Path sudah diperbaiki untuk menunjuk ke folder yang sama
-import siteData from './data.json'; 
+// Path sudah diperbaiki sesuai lokasi file Anda di src/config/
+import siteData from '../../config/data.json'; 
 import menuItems from './header.data';
 
 export default function Header({ className }) {
