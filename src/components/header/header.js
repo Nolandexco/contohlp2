@@ -1,16 +1,18 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Button, Heading } from 'theme-ui';
 import { keyframes } from '@emotion/core';
-import { Link } from 'react-scroll'; // <-- INI BARIS YANG HILANG & SEKARANG SUDAH DITAMBAHKAN KEMBALI
-import Logo from 'components/logo';
-import LogoDark from 'assets/logo.svg';
+import { Link } from 'react-scroll';
+import siteData from '../../data/data.json'; 
 import menuItems from './header.data';
 
 export default function Header({ className }) {
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
-        <Logo src={LogoDark} />
+        <Heading as="h1" sx={styles.logo}>
+          {siteData.header.logoText}
+        </Heading>
+        
         <Flex as="nav" sx={styles.nav}>
           {menuItems.map((menuItem, i) => (
             <Link
@@ -27,13 +29,23 @@ export default function Header({ className }) {
           ))}
         </Flex>
 
-        <Button
-          className="donate__btn"
-          variant="secondary"
-          aria-label="Get Started"
+        {/* Ganti tombol statis dengan Link yang membungkus tombol */}
+        <Link
+          to={siteData.header.button.path}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
         >
-          Get Started
-        </Button>
+          <Button
+            className="donate__btn"
+            variant="secondary"
+            aria-label={siteData.header.button.text}
+          >
+            {siteData.header.button.text}
+          </Button>
+        </Link>
+        
       </Container>
     </header>
   );
@@ -52,6 +64,12 @@ const positionAnim = keyframes`
 `;
 
 const styles = {
+  logo: {
+    color: 'text',
+    fontSize: ['24px', null, null, '30px'],
+    fontWeight: 'bold',
+    cursor: 'pointer',
+  },
   header: {
     color: 'text',
     fontWeight: 'body',
@@ -74,7 +92,7 @@ const styles = {
       color: '#000000',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
       py: 3,
-      'nav > a': {
+      'nav > a, & > div > h1': {
         color: 'text',
       },
     },
