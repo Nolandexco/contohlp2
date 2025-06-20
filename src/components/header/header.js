@@ -2,7 +2,8 @@
 import { jsx, Container, Flex, Button, Heading } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
-import siteData from '../../data/data.json'; 
+// Path sudah diperbaiki untuk menunjuk ke folder yang sama
+import siteData from './data.json'; 
 import menuItems from './header.data';
 
 export default function Header({ className }) {
@@ -29,7 +30,6 @@ export default function Header({ className }) {
           ))}
         </Flex>
 
-        {/* Ganti tombol statis dengan Link yang membungkus tombol */}
         <Link
           to={siteData.header.button.path}
           spy={true}
