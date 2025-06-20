@@ -3,7 +3,7 @@ import { jsx, Container, Flex, Button } from "theme-ui";
 // ... import lainnya
 import Logo from "components/logo";
 import LogoDark from "assets/logo.svg";
-import MobileDrawer from "./mobile-drawer"; // <-- HAPUS BARIS INI
+// Baris import MobileDrawer sudah dihapus
 import menuItems from "./header.data";
 
 export default function Header({ className }) {
@@ -12,7 +12,19 @@ export default function Header({ className }) {
 			<Container sx={styles.container}>
 				<Logo src={LogoDark} />
 				<Flex as="nav" sx={styles.nav}>
-					{/* ... kode menu desktop */}
+					{menuItems.map((menuItem, i) => (
+						<Link
+							activeClass="active"
+							to={menuItem.path}
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
+							key={i}
+						>
+							{menuItem.label}
+						</Link>
+					))}
 				</Flex>
 				<Button
 					className="donate__btn"
@@ -21,10 +33,13 @@ export default function Header({ className }) {
 				>
 					Get Started
 				</Button>
-				<MobileDrawer /> {/* <-- HAPUS BARIS INI */}
+				{/* Komponen MobileDrawer sudah dihapus */}
 			</Container>
 		</header>
 	);
 }
 
-// ... styles
+// ... styles (tidak perlu diubah)
+const styles = {
+    // ... isi styles tetap sama
+}
