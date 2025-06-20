@@ -1,23 +1,33 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 import { Container, Box, Heading, Text, Image, Button } from "theme-ui";
+
+// 1. Impor data terpusat
+import data from "config/data.json";
+
+// Impor aset gambar (tetap diperlukan untuk optimasi build)
 import BannerImg from "assets/banner-thumb.png";
 import ShapeLeft from "assets/shape-left.png";
 import ShapeRight from "assets/shape-right.png";
+
+// 2. Ambil data yang relevan
+const { banner } = data;
 
 export default function Banner() {
 	return (
 		<section sx={styles.banner} id="home">
 			<Container sx={styles.banner.container}>
 				<Box sx={styles.banner.contentBox}>
+					{/* 3. Gunakan data dari JSON */}
 					<Heading as="h1" variant="heroPrimary">
-						Top Quality Digital Products to Explore
+						{banner.title}
 					</Heading>
 					<Text as="p" variant="heroSecondary">
-						Check out our website to find great software products and deals! If
-						you need a website or a web application, this is the place to go!
+						{banner.description}
 					</Text>
-					<Button variant="primary">Explore</Button>
+					<Button variant="primary" as="a" href={banner.button.link}>
+						{banner.button.text}
+					</Button>
 				</Box>
 				<Box sx={styles.banner.imageBox}>
 					<Image src={BannerImg} alt="banner" />
@@ -27,6 +37,7 @@ export default function Banner() {
 	);
 }
 
+// Styles object tidak perlu diubah
 const styles = {
 	banner: {
 		pt: ["140px", "145px", "155px", "170px", null, null, "180px", "215px"],
