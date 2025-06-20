@@ -4,7 +4,7 @@
     "description": "Kunjungi kami untuk menemukan produk dan layanan digital berkualitas tinggi! Jika Anda membutuhkan website atau aplikasi web, Bisnovo adalah solusi tepat!",
     "button": {
       "text": "Hubungi Kami",
-      "link": "https://wa.me/085156779923"
+      "link": "https://wa.me/6285156779923"
     },
     "image": "assets/banner-thumb.png",
     "shapeLeft": "assets/shape-left.png",
@@ -16,7 +16,7 @@
     "description": "Nikmati layanan digital terbaik yang dirancang untuk memenuhi kebutuhan bisnis Anda, kapan saja dan di mana saja.",
     "button": {
       "text": "Mulai Sekarang",
-      "link": "https://wa.me/085156779923"
+      "link": "https://wa.me/6285156779923"
     },
     "thumbnail": "assets/core-feature.png",
     "shape": "assets/shape-pattern2.png"
@@ -143,7 +143,7 @@
           "description": "Untuk bisnis menengah",
           "priceWithUnit": "Rp150.000",
           "buttonText": "Hubungi Kami",
-          "link": "https://wa.me/085156779923",
+          "link": "https://wa.me/6285156779923",
           "anotherOption": "Atau Coba 14 Hari Gratis",
           "points": [
             { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
@@ -159,7 +159,7 @@
           "description": "Untuk pengembang profesional",
           "priceWithUnit": "Rp240.000",
           "buttonText": "Hubungi Kami",
-          "link": "https://wa.me/085156779923",
+          "link": "https://wa.me/6285156779923",
           "anotherOption": "Atau Coba 14 Hari Gratis",
           "points": [
             { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
