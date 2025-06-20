@@ -125,18 +125,19 @@
     "plans": {
       "monthly": [
         {
-          "id": 1,
-          "name": "Paket Gratis",
-          "description": "Untuk tim kecil atau startup",
-          "buttonText": "Coba Gratis",
-          "priceWithUnit": "Rp0",
-          "points": [
-            { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
-            { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
-            { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
-            { "icon": "close", "text": "Toko eCommerce", "isAvailable": false }
-          ]
-        },
+  "id": 1,
+  "name": "Paket Gratis",
+  "description": "Untuk tim kecil atau startup",
+  "buttonText": "Coba Gratis",
+  "link": "https://wa.me/6285156779923",
+  "priceWithUnit": "Rp0",
+  "points": [
+    { "icon": "checkmark", "text": "Pembuat Drag & Drop", "isAvailable": true },
+    { "icon": "checkmark", "text": "Ribuan Template", "isAvailable": true },
+    { "icon": "checkmark", "text": "Alat Pendukung Blog", "isAvailable": true },
+    { "icon": "close", "text": "Toko eCommerce", "isAvailable": false }
+  ]
+}, 
         {
           "id": 2,
           "name": "Bisnis Pro",
