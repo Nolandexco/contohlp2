@@ -1,163 +1,152 @@
-import React, { useState, useEffect } from "react";
-import { Box, IconButton } from "theme-ui";
+/** @jsx jsx */
+import { jsx, Box, Flex, Container } from "theme-ui";
+import { keyframes } from "@emotion/core";
+import { useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { Link } from "react-scroll";
-import FocusLock from "react-focus-lock";
-import { keyframes } from "@emotion/core";
 import menuItems from "./header.data";
 
 export default function MobileDrawer() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Stop background scroll when drawer is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isOpen]);
-
-  const toggleDrawer = () => {
-    setIsOpen((prev) => !prev);
-  };
-
   return (
     <Box sx={styles.wrapper}>
-      {/* Menu open button */}
-      <IconButton
+      {/* Menu button */}
+      <Box
         sx={styles.handler}
-        onClick={toggleDrawer}
+        onClick={() => setIsOpen(true)}
         aria-label="Open Menu"
-        aria-expanded={isOpen}
       >
-        <IoMdMenu size="28px" />
-      </IconButton>
+        <IoMdMenu size="26px" />
+      </Box>
 
       {/* Mobile menu overlay */}
       {isOpen && (
-        <FocusLock>
-          <Box
-            as="aside"
-            role="dialog"
-            aria-modal="true"
-            sx={styles.drawer}
-            onClick={toggleDrawer} // Close on overlay click
-          >
-            <Box sx={styles.content} onClick={(e) => e.stopPropagation()}>
-              {/* Close button */}
-              <IconButton
-                sx={styles.closeButton}
-                onClick={toggleDrawer}
-                aria-label="Close Menu"
-              >
-                <IoMdClose size="24px" color="#ffffff" />
-              </IconButton>
-
-              {/* Menu items */}
-              <Box sx={styles.menuItems}>
-                {menuItems.map((menuItem, i) => (
-                  <Link
-                    key={i}
-                    activeClass="active"
-                    to={menuItem.path}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                    onClick={toggleDrawer}
-                    sx={styles.menuLink}
-                  >
-                    {menuItem.label}
-                  </Link>
-                ))}
-              </Box>
+        <Box sx={styles.menuOverlay}>
+          <Container sx={styles.container}>
+            {/* Close button */}
+            <Box
+              sx={styles.closeButton}
+              onClick={() => setIsOpen(false)}
+              aria-label="Close Menu"
+            >
+              <IoMdClose size="24px" />
             </Box>
-          </Box>
-        </FocusLock>
+
+            {/* Menu items */}
+            <Flex sx={styles.menuItems}>
+              {menuItems.map((menuItem, i) => (
+                <Link
+                  key={i}
+                  activeClass="active"
+                  to={menuItem.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                  onClick={() => setIsOpen(false)}
+                  sx={styles.menuLink}
+                >
+                  {menuItem.label}
+                </Link>
+              ))}
+            </Flex>
+          </Container>
+        </Box>
       )}
     </Box>
   );
 }
 
-// Keyframe animations for a smoother experience
-const fadeIn = keyframes`
-  from { opacity: 0; }
-  to { opacity: 1; }
+const slideIn = keyframes`
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 `;
 
-const slideIn = keyframes`
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+const slideOut = keyframes`
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 `;
 
 const styles = {
   wrapper: {
     display: ["flex", null, null, null, "none"],
     alignItems: "center",
+    flexShrink: 0,
   },
   handler: {
-    // IconButton provides base styling, we just adjust it
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     cursor: "pointer",
     color: "text",
+    transition: "color 0.3s ease",
+    "&:hover": {
+      color: "primary",
+    },
   },
-  drawer: {
+  menuOverlay: {
     position: "fixed",
     top: 0,
     right: 0,
-    width: "100%",
+    width: ["100%", "80%", "50%"],
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.4)", // A slightly softer overlay
+    backgroundColor: "background",
     zIndex: 1000,
-    animation: `${fadeIn} 0.3s ease-in-out`,
-    display: 'flex',
-    justifyContent: 'flex-end', // Align content to the right
+    animation: `${slideIn} 0.3s ease-in-out`,
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+    "&.closing": {
+      animation: `${slideOut} 0.3s ease-in-out`,
+    },
   },
-  content: {
-    position: "relative",
-    width: ["85%", "60%", "45%"], // Responsive width
-    height: "100%",
-    backgroundColor: "#1c1e21", // A dark, modern background
-    boxShadow: "-5px 0 15px rgba(0,0,0,0.2)",
-    padding: "40px 20px",
+  container: {
     display: "flex",
     flexDirection: "column",
-    animation: `${slideIn} 0.3s ease-in-out`,
+    height: "100%",
+    pt: 4,
+    pb: 5,
   },
   closeButton: {
-    position: "absolute",
-    top: "15px",
-    right: "15px",
+    alignSelf: "flex-end",
     cursor: "pointer",
-    // IconButton styles apply
+    color: "text",
+    transition: "color 0.3s ease",
+    "&:hover": {
+      color: "primary",
+    },
+    p: 3,
   },
   menuItems: {
-    display: "flex",
     flexDirection: "column",
-    alignItems: "flex-start", // Align text to the left
-    width: "100%",
-    mt: '40px', // Margin top to push it below the close button
+    alignItems: "center",
+    justifyContent: "center",
+    flexGrow: 1,
   },
   menuLink: {
-    color: "white",
-    fontSize: "20px",
-    fontWeight: "500",
-    padding: "15px 20px",
-    width: '100%',
+    fontSize: [3, 4],
+    fontWeight: "body",
+    color: "text",
+    padding: "15px 0",
     cursor: "pointer",
     textDecoration: "none",
-    transition: "all 0.2s ease-in-out",
-    borderRadius: "5px",
+    transition: "color 0.3s ease",
     "&:hover": {
-      backgroundColor: "rgba(255, 255, 255, 0.1)",
-      color: "primary", // Assumes 'primary' is defined in your theme
+      color: "primary",
     },
     "&.active": {
       color: "primary",
-      fontWeight: '600',
     },
   },
 };
